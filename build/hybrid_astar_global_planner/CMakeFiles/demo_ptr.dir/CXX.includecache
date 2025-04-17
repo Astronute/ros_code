@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tom/catkin_ws/src/hybrid_astar_global_planner/src/demo_ptr.cpp
+iostream
+-
+memory
+-
+string
+-
+demo_ptr.h
+/home/tom/catkin_ws/src/hybrid_astar_global_planner/src/demo_ptr.h
+
+/home/tom/catkin_ws/src/hybrid_astar_global_planner/src/demo_ptr.h
+

@@ -1,0 +1,9 @@
+<launch>
+    <arg name="arg_l0" default="false"/>
+    <group if="$(arg arg_l0)">
+        <param name="param_l0" value="100" />
+    </group>
+    <group unless="$(arg arg_l0)">
+        <param name="param_l0" value="99" />
+    </group>
+</launch>

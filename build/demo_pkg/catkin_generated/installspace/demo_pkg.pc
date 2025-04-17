@@ -1,0 +1,8 @@
+prefix=/home/tom/catkin_ws/install
+
+Name: demo_pkg
+Description: Description of demo_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

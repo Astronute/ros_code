@@ -1,0 +1,23 @@
+<launch>
+
+    <arg name="arg_bool" default="false"/>
+
+    <include file="$(find demo_param)/launch/launch0.launch">
+        <arg name="arg_l0" default="false"/>
+    </include>
+
+    <group if="$(arg arg_bool)">
+        <node pkg="demo_param" type="demo_param_node" name="demo_param_node" output="screen"></node>
+        <param name="param_int" value="7"/>
+    </group>
+    <group unless="$(arg arg_bool)">
+        <node pkg="demo_param" type="demo_param_node" name="demo_param_node" output="screen"></node>
+        <param name="param_int" value="77"/>
+    </group>
+
+    <param name="param_float" value="7.3" />
+    <param name="param_str" value="abcde" />
+    
+
+
+</launch>

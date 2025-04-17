@@ -1,0 +1,2 @@
+demo_msgs:demo_param:demo_pkg:demo_tf:demo_tf2:hybrid_astar_global_planner:jie_ware:lidar_pkg:map_pkg:nav_pkg:path_planner:planning:pso_global_planner:serial:serial_pkg:slam_pkg:vel_pkg:wpb_home/wpb_home_behaviors:wpb_home/wpb_home_bringup:wpb_home/wpb_home_python:wpb_home/wpb_home_python3:wpb_home/wpb_home_remote:wpb_home/wpb_home_tutorials:wpb_home/wpbh_local_planner:wpr_simulation
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/tom/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tom/catkin_ws/install -G Unix Makefiles

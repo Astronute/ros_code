@@ -1,0 +1,10 @@
+<launch>
+
+    <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(find planning)/map/map002.yaml"/> -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find hybrid_astar)/maps/map.yaml"/>
+
+    <node pkg="map_pkg" type="map_downsample_node" name="map_downsample_node" output="screen"/>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find map_pkg)/rviz/config01.rviz"/>
+
+</launch>

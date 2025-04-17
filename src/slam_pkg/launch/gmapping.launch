@@ -1,0 +1,14 @@
+<launch>
+    <include file="$(find wpr_simulation)/launch/wpb_stage_robocup.launch"/>
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping">
+        <!-- <param name="map_update_distance_thresh" value="0.1"/>
+        <param name="map_update_angle_thresh" value="0.1"/> -->
+        <param name="delta" value="0.02"/> 
+        <param name="xmin" value="-7.5"/>        // map 的初始大小
+        <param name="ymin" value="-7.5"/>
+        <param name="xmax" value="7.5"/>
+        <param name="ymax" value="7.5"/>
+    </node>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find slam_pkg)/rviz/slam.rviz"/>
+    <node pkg="wpr_simulation" type="keyboard_vel_ctrl" name="keyboard_vel_ctrl"/>
+</launch>

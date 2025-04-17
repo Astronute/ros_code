@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+    <node pkg="demo_tf2" type="create_turtle_node" name="turtle2"/>
+    <node pkg="demo_tf2" type="pub_turtles_node" name="pub_turtle1" args="turtle1"/>
+    <node pkg="demo_tf2" type="pub_turtles_node" name="pub_turtle2" args="turtle222"/>
+    <node pkg="demo_tf2" type="sub_turtles_node" name="ctrl"/>
+</launch>

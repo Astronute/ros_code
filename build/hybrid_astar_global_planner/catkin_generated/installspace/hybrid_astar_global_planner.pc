@@ -1,0 +1,8 @@
+prefix=/home/tom/catkin_ws/install
+
+Name: hybrid_astar_global_planner
+Description: Description of hybrid_astar_global_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
